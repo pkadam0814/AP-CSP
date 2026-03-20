@@ -88,9 +88,6 @@ onEvent("button6", "click", function( ) {
 onEvent("button7", "click", function( ) {
    setScreen("homescreen");
 });
-onEvent("homeconvotracker", "click", function( ) {
-   setScreen("homescreen");
-});
 onEvent("button15", "click", function( ) {
    setScreen("homescreen");
 });
