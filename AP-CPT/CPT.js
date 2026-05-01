@@ -2,12 +2,12 @@ var convos = 0;
 var mindmeter = 0;
 var overallscore = [];
 var selection = 0;
-
+// Main Function
 function updateOS(interactions) {
 
   var sessionScore = mindmeter + convos +interactions;
 
-
+// List Usage
   appendItem(overallscore, sessionScore);
 
   
@@ -54,6 +54,7 @@ onEvent("actionrank", "click", function( ) {
 });
 onEvent("settingsbutton", "click", function( ) {
   setScreen("settings");
+// ConvoTracker: Lines 58-73
 });
 onEvent("record", "click", function( ) {
   playSpeech("Lets Ignite the Spark!", "male", "English");
@@ -112,13 +113,13 @@ onEvent("button23", "click", function( ) {
 });
 onEvent("button11", "click", function( ) {
   setScreen("Pranav");
-  
+  // SocialSparkConnect: Lines 117-123
 });
 onEvent("button19", "click", function( ) {
   playSpeech("Send a Message!", "male", "English");
   hideElement("image13");
   showElement("text_input2");
-  
+  // Call to function
 });
 onEvent("text_input2", "click", function( ) {
   updateOS(1);
@@ -165,6 +166,7 @@ onEvent("image14", "click", function( ) {
 });
 onEvent("button59", "click", function( ) {
    setScreen("homescreen");
+  // MindMeter functionality
 });
 onEvent("button43", "click", function( ) {
    mindmeter= mindmeter+ 1;
